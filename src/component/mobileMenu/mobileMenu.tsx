@@ -1,30 +1,37 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import styles from "../../css/main.module.scss";
-import { FaHome, FaSearch, FaPlusCircle, FaBell, FaUser } from "react-icons/fa";
+import { FaHome, FaTools, FaPlusCircle, FaBell, FaUser } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const MobileMenu: React.FC = () => {
   return (
     <nav className={styles.mobileMenu}>
       <ul>
         <li>
-          <FaHome />
-          <span>خانه</span>
+          <Link to={"/rp"}>
+            <FaHome />
+          </Link>
         </li>
         <li>
-          <FaSearch />
-          <span>جستجو</span>
+          <Link to={"/rp/service"}>
+            <FaTools />
+          </Link>
         </li>
         <li className={styles.centerButton}>
-          <FaPlusCircle />
+          <Link to={"/rp/ai"}>
+            <FaPlusCircle />
+          </Link>
         </li>
         <li>
-          <FaBell />
-          <span>اعلان‌ها</span>
+          <Link to={"/rp/signup"}>
+            <FaBell />
+          </Link>
         </li>
         <li>
-          <FaUser />
-          <span>پروفایل</span>
+          <Link to={"/rp/profile"}>
+            <FaUser />
+          </Link>
         </li>
       </ul>
     </nav>
