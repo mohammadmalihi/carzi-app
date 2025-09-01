@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'vazir';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/font/samizcore/Vazir-Medium.eot');
+   
+    src: url('../assets/font/samizcore/Vazir-Medium.woff2') format('woff2'),
+         url('../assets/font/samizcore/Vazir-Medium.woff') format('woff'),
+         url('../assets/font/samizcore/Vazir-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'IranNastaliq';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/font/samizcore/IranNastaliq/IranNastaliq.ttf');   
+}
+
+
+@font-face {
+    font-family: "iranSans";
+    src: url('../assets/font/iranSans/IRANSansWeb(FaNum)_Bold.eot');
+
+    src: url("../assets/font/iranSans/IRANSansWeb(FaNum)_Bold.ttf") format("ttf"),
+    url('../assets/font/iranSans/IRANSansWeb(FaNum)_Bold.woff') format('woff'),
+
+}
